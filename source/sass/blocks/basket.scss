@@ -459,31 +459,40 @@
 }
 
 .storage-accept {
-  position: relative;
-  top: 5px;
+  &+label {
+    position: relative;
+    top: 5px;
 
-  &::before {
-    position: absolute;
-    display: block;
-    content: "";
-    background-color: $color-grey--light;
-    border-radius: 7px;
-    width: 34px;
-    height: 14px;
-    top: 0;
-    right: 0;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      background-color: $color-grey--light;
+      border-radius: 7px;
+      width: 34px;
+      height: 14px;
+      top: 0;
+      right: 0;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      background-color: $color-grey;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      top: -4px;
+      right: 16px;
+    }
   }
 
-  &::after {
-    position: absolute;
-    display: block;
-    content: "";
-    background-color: $color-grey;
-    border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    top: -4px;
-    right: 18px;
+  &:checked+label {
+    &::after {
+      background-color: $color-black;
+      right: -5px;
+    }
   }
 }
 
