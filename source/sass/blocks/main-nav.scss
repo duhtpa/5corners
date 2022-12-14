@@ -1,0 +1,55 @@
+// .main-nav {
+//   margin-bottom: 26px;
+// }
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav__link {
+  &--bag {
+    margin-left: auto;
+  }
+}
+
+.nav__toggle {
+  border: none;
+  background: transparent;
+  position: relative;
+  display: block;
+  content: "";
+  width: 32px;
+  height: 28px;
+  margin-left: 24px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 28px;
+    height: 2px;
+    background-color: #000000;
+    top: 9px;
+    right: 0;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #000000;
+    bottom: 9px;
+    right: 0;
+  }
+}
+
+// @media (max-width: $desktop-width) {
+//   .page-nav {
+//     max-width: $desktop-width;
+//     margin: 40px auto;
+//   }
+// }

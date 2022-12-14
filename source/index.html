@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGO. Оформление заказа</title>
+
+  <!-- favicons -->
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav nav">
+      <div class="site-name">
+        <a href="#"><img src="./img/logo-name.svg" alt="Интернет-магазин одежды и аксессуаров LOGO" width="100"
+            height="22"></a>
+      </div>
+
+      <a class="nav__link--bag box" href="#"><span class="visually-hidden">Корзина</span></a>
+
+      <div class="nav__wrapper visually-hidden">
+        <ul class="page-nav__site site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Магазины</a>
+          </li>
+        </ul>
+
+        <ul class="page-nav__user user-list">
+          <li class="user-list__item">
+            <a class="nav__link--search" href="#">Поиск</a>
+          </li>
+          <li class="user-list__item">
+            <a class="nav__link--account" href="#">Аккаунт</a>
+          </li>
+          <li class="user-list__item">
+            <a class="nav__link--favorite" href="#">Избранное</a>
+          </li>
+          <li class="user-list__item">
+            <a class="nav__link--bag" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="breadcrumbs">
+      <span>Главная</span>
+      <span>Оформление заказа</span>
+    </div>
+
+    <div class="row-wrapper">
+      <h1 class="main-header">Оформление заказа</h1>
+      <p class="auth">
+        <span>Есть аккаунт?</span>
+        <a href="#">Войти</a>
+      </p>
+    </div>
+
+    <!-- <div class="order"></div> -->
+
+    <div class="basket">
+      <h2 class="block-header basket-header">
+        <span class="order__count">3</span>
+        <span>товара на <i></i> сумму</span>
+        <span class="order__summ">25 000 ₽</span>
+      </h2>
+
+      <ul class="basket__list">
+        <li class="basket__item">
+          <article class="basket__good good">
+            <div class="good__img">
+              <a href="#">
+                <img src="./img/content/top-hills.jpg" alt="Утепленная стеганная куртка женская Top Hills" width="90"
+                  height="111" srcset="./img/content/top-hills_x2.jpg 2x">
+              </a>
+            </div>
+
+            <h2><a href="#">Утепленная стеганная куртка женская Top Hills</a></h2>
+
+            <button class="good__del good-btn good-btn--del" type="button"><span class="visually-hidden">Удалить
+                товар</span></button>
+
+            <dl class="good__parameter param">
+              <div>
+                <dt>Артикул</dt>
+                <dd class="param--vendor-code">512-05</dd>
+              </div>
+              <div>
+                <dt>Сезон</dt>
+                <dd class="param--season">Осень-зима</dd>
+              </div>
+            </dl>
+
+            <form class="form-good" action="#" method="post">
+              <fieldset class="good__size size">
+                <legend class="visually-hidden">Выбор размера</legend>
+
+                <ul class="size__list">
+                  <li class="size__item">
+                    <input class="visually-hidden" id="512-05--size--xs" type="radio" name="512-05--size" value="xs"
+                      disabled checked>
+                    <label for="512-05--size--xs">XS</label>
+                  </li>
+                  <li class="size__item">
+                    <input class="visually-hidden" id="512-05--size--s" type="radio" name="512-05--size" value="s">
+                    <label for="512-05--size--s">S</label>
+                  </li>
+                  <li class="size__item">
+                    <input class="visually-hidden" id="512-05--size--m" type="radio" name="512-05--size" value="m"
+                      checked>
+                    <label for="512-05--size--m">M</label>
+                  </li>
+                  <li class="size__item">
+                    <input class="visually-hidden" id="512-05--size--l" type="radio" name="512-05--size" value="l">
+                    <label for="512-05--size--l">L</label>
+                  </li>
+                  <li class="size__item">
+                    <input class="visually-hidden" id="512-05--size--xl" type="radio" name="512-05--size" value="xl">
+                    <label for="512-05--size--xl">XL</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="good__color">
+                <legend class="visually-hidden">Выбор цвета</legend>
+
+                <ul class="color__list">
+                  <li class="color__item">
+                    <input class="visually-hidden" id="512-05--color-black" type="radio" name="512-05--color"
+                      value="black" checked>
+                    <label for="512-05--color-black" title="Чёрный"></label>
+                  </li>
+                  <li class="color__item">
+                    <input class="visually-hidden" id="512-05--color-blue" type="radio" name="512-05--color"
+                      value="blue">
+                    <label for="512-05--color-blue" title="Синий"></label>
+                  </li>
+                  <li class="color__item">
+                    <input class="visually-hidden" id="512-05--color-brown" type="radio" name="512-05--color"
+                      value="brown">
+                    <label for="512-05--color-brown" title="Коричневый"></label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="good__summ">
+                <p class="good__price">
+                  <span class="discount">
+                    <span class="visually-hidden">Цена со скидкой</span>
+                    12 000 ₽</span>
+                  <span class="price">10 000 ₽</span>
+                </p>
+                <div class="good__count-wrapper">
+                  <button class="good-btn good-count good-count--decrease" type="button"><span
+                      class="visually-hidden">Уменьшить</span></button>
+                  <fieldset>
+                    <input type="number" name="512-05--count" min="1" maxlength="2" aria-label="Количество единиц"
+                      value="2">
+                  </fieldset>
+                  <button class="good-btn good-count good-count--increase" type="button"><span
+                      class="visually-hidden">Добавить</span></button>
+                </div>
+                <p class="good__price">
+                  <span class="discount">
+                    <span class="visually-hidden">Цена со скидкой</span> 24 000 ₽
+                  </span>
+                  <span class="price">20 000 ₽</span>
+                </p>
+              </div>
+            </form>
+          </article>
+        </li>
+        <li class="basket__item basket__item--del">
+          <div class="wrapper">
+            <div>
+              <p>
+                <span>Товар</span>
+                <span class="good-name">Наименование товара</span>
+                <span>был удален из корзины.</span>
+              </p>
+
+              <button type="button">Восстановить</button>
+            </div>
+
+            <button class="good__del good-btn good-btn--del" type="button"><span class="visually-hidden">Удалить
+                товар</span></button>
+          </div>
+        </li>
+        <li class="basket__item">
+          <article class="basket__good good">
+            <div class="good__img">
+              <a href="#">
+                <img src="./img/content/zolla.jpg" alt="Вязанная шапка Zolla" width="90" height="111"
+                  srcset="./img/content/zolla_x2.jpg 2x">
+              </a>
+            </div>
+
+            <h2><a href="#">Вязанная шапка Zolla</a></h2>
+
+            <button class="good__del good-btn good-btn--del" type="button"><span class="visually-hidden">Удалить
+                товар</span></button>
+
+            <dl class="good__parameter param">
+              <div>
+                <dt>Артикул</dt>
+                <dd class="param--vendor-code">891-256</dd>
+              </div>
+              <div>
+                <dt>Сезон</dt>
+                <dd class="param--season">Демисезон</dd>
+              </div>
+            </dl>
+
+            <form class="form-good" action="#" method="post">
+              <fieldset class="good__size size">
+                <legend class="visually-hidden">Выбор размера</legend>
+
+                <ul class="size__list">
+                  <li class="size__item">
+                    <input class="visually-hidden" id="891-256--size--xs" type="radio" name="891-256--size" value="xs"
+                      checked>
+                    <label for="891-256--size--xs">XS</label>
+                  </li>
+                  <li class="size__item">
+                    <input class="visually-hidden" id="891-256--size--s" type="radio" name="891-256--size" value="s"
+                      checked>
+                    <label for="891-256--size--s">S</label>
+                  </li>
+                  <li class="size__item">
+                    <input class="visually-hidden" id="891-256--size--m" type="radio" name="891-256--size" value="m">
+                    <label for="891-256--size--m">M</label>
+                  </li>
+                  <li class="size__item">
+                    <input class="visually-hidden" id="891-256--size--l" type="radio" name="891-256--size" value="l">
+                    <label for="891-256--size--l">L</label>
+                  </li>
+                  <li class="size__item">
+                    <input class="visually-hidden" id="891-256--size--xl" type="radio" name="891-256--size" value="xl">
+                    <label for="891-256--size--xl">XL</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="good__color">
+                <legend class="visually-hidden">Выбор цвета</legend>
+
+                <ul class="color__list">
+                  <li class="color__item">
+                    <input class="visually-hidden" id="891-256--color-black" type="radio" name="891-256--color"
+                      value="black" checked>
+                    <label for="891-256--color-black" title="Чёрный"></label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="good__summ">
+                <p class="good__price">
+                  <span class="discount"></span>
+                  <span class="price">500 ₽</span>
+                </p>
+                <div class="good__count-wrapper">
+                  <button class="good-btn good-count good-count--decrease" type="button"><span
+                      class="visually-hidden">Уменьшить</span></button>
+                  <fieldset>
+                    <input type="number" name="891-256--count" min="1" maxlength="2" aria-label="Количество единиц"
+                      value="1">
+                  </fieldset>
+                  <button class="good-btn good-count good-count--increase" type="button"><span
+                      class="visually-hidden">Добавить</span></button>
+                </div>
+                <p class="good__price">
+                  <span class="discount"></span>
+                  <span class="price">500 ₽</span>
+                </p>
+              </div>
+            </form>
+          </article>
+        </li>
+      </ul>
+    </div>
+
+    <form class="form-order" action="#" method="post">
+      <fieldset class="contacts">
+        <legend class="block-header">Контактные данные</legend>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <input class="text-field" type="text" name="contacts-name" id="contacts-name" placeholder="Имя"
+              autocomplete="off" value="Александр" required>
+            <label class="contacts__label" for="contacts-name">Имя</label>
+          </li>
+          <li class="contacts__item">
+            <input class="text-field" type="text" name="contacts-surname" id="contacts-surname" placeholder="Фамилия"
+              autocomplete="off" required>
+            <label class="contacts__label" for="contacts-surname">Фамилия</label>
+          </li>
+          <li class="contacts__item">
+            <input class="text-field" type="tel" name="contacts-phone" id="contacts-phone" placeholder="Телефон"
+              autocomplete="off" required>
+            <label class="contacts__label" for="contacts-phone">Телефон</label>
+          </li>
+          <li class="contacts__item">
+            <input class="text-field" type="email" name="contacts-email" id="contacts-email" placeholder="Email"
+              autocomplete="off" required>
+            <label class="contacts__label" for="contacts-email">Email</label>
+          </li>
+          <li class="contacts__item contacts__address">
+            <textarea class="text-field" name="contacts-address" id="contacts-address" cols="30" rows="2"
+              placeholder="Адрес доставки" autocomplete="off"
+              required>г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
+            <label class="contacts__label" for="contacts-address">Адрес доставки</label>
+            <button type="button"><span class="visually-hidden">Показать на карте</span></button>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="map">
+        <h2 class="visually-hidden">Расположение адреса доставки</h2>
+
+        <div class="map__wrapper">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/content/map-desktop.jpg 1x, ./img/content/map-desktop_x2.jpg 2x">
+              <img class="contacts__map-img" width="288" height="220" src="./img/content/map-mobile.jpg"
+                srcset="./img/content/map-mobile_x2.jpg 2x"
+                alt="выбранный адрес: г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152">
+            </picture>
+          </a>
+          <!-- frame with yandex-map -->
+        </div>
+      </div>
+
+      <fieldset class="payment">
+        <legend class="block-header">Оплата</legend>
+
+        <ul>
+          <li>
+            <input class="visually-hidden" type="radio" name="payment" id="payment-courier--cash" value="courier-cash">
+            <label for="payment-courier--cash">Наличными курьеру</label>
+          </li>
+          <li>
+            <input class="visually-hidden" type="radio" name="payment" id="payment-courier--card" value="courier-card">
+            <label for="payment-courier--card">Картой курьеру</label>
+          </li>
+          <li>
+            <!-- Картой онлайн -->
+            <input class="visually-hidden" type="radio" name="payment" id="payment-online--card" value="online-card">
+            <label for="payment-online--card">Картой онлайн</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="comments">
+        <legend class="block-header">Комментарий к заказу</legend>
+
+        <textarea name="comments-field" id="comments-field" cols="30" rows="5"
+          placeholder="Комментарий к заказу"></textarea>
+        <p class="comments__chars">Использовано <span>0</span>/142 символов</p>
+      </fieldset>
+
+      <div class="formalize">
+        <h2 class="visually-hidden">Итоговая информация по заказу</h2>
+
+        <dl class="formalize__summ summ">
+          <div class="summ--main">
+            <dt>Товары</dt>
+            <dd class="summ--goods">24 500 ₽</dd>
+          </div>
+          <div class="summ--wrapper">
+            <div class="summ--main">
+              <dt>Скидка</dt>
+              <dd class="summ--discount">- 4 500 ₽</dd>
+            </div>
+            <div class="summ--second">
+              <dt>Акции</dt>
+              <dd class="summ--promotion">- 4 500 ₽</dd>
+            </div>
+            <div class="summ--second">
+              <dt>Промокод</dt>
+              <dd class="summ--promocode">- 4 500 ₽</dd>
+            </div>
+          </div>
+          <div class="summ--main">
+            <dt>Доставка</dt>
+            <dd class="summ--delivery">200 ₽</dd>
+          </div>
+        </dl>
+
+        <fieldset class="formalize__storage storage">
+          <div>
+            <legend>Получить товар со склада</legend>
+            <span>Сроки получения могут измениться</span>
+          </div>
+
+          <div>
+            <label class="storage-accept" for="storage-accept"><span class="visually-hidden">Переключение
+                опции</span></label>
+            <input class="visually-hidden" type="checkbox" name="storage" id="storage-accept" value="on"
+              autocomplete="off">
+          </div>
+        </fieldset>
+
+        <p class="formalize__price-full">
+          <span>Итого</span>
+          <span>20 700 ₽</span>
+        </p>
+
+        <fieldset class="formalize__promocode promo">
+          <legend class="visually-hidden">Промокод</legend>
+          <div class="input-wrapper">
+            <input class="text-field" type="text" name="promocode" placeholder="Введите промокод" autocomplete="off">
+            <button class="promo__btn-accept" type="button">Применить</button>
+          </div>
+
+          <span class="promo__accept"></span>
+        </fieldset>
+
+
+        <button class="formalize__btn" type="submit">Оформить заказ</button>
+
+        <p class="formalize__privacy privacy">
+          <span>Нажимая кнопку “Оформить заказ”, Вы соглашаетесь с</span>
+          <a href="#">политикой конфиденциальности.</a>
+        </p>
+      </div>
+    </form>
+  </main>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

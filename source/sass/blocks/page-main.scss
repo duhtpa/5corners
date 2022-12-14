@@ -1,0 +1,50 @@
+.breadcrumbs {
+  font-size: 12px;
+  margin-bottom: 32px;
+
+  span:not(:last-child) {
+    color: $color-grey;
+
+    &::after {
+      display: inline;
+      content: "/";
+      padding: 0 10px;
+    }
+  }
+}
+
+.main-header {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.row-wrapper {
+  margin-bottom: 32px;
+  // padding-top: 26px;
+}
+
+.auth {
+  font-size: 14px;
+  margin: 0;
+
+  span {
+    color: $color-grey;
+  }
+}
+
+.block-header {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+
+  i {
+    display: block;
+  }
+}
+
+.basket-header {
+  border-bottom: 0.5px solid $color-grey--light;
+  padding-bottom: 24px;
+}
