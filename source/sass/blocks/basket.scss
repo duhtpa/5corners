@@ -317,6 +317,10 @@
   }
 }
 
+.contacts__field:disabled+button {
+  display: none;
+}
+
 .map {
   margin-bottom: 40px;
 }
