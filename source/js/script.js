@@ -110,3 +110,10 @@ $btnAccept.addEventListener("click", () => {
     btnClickHandler("#C8C8C8", Field.CORRECT, "купон применен");
   }
 });
+
+let navWrapper = document.querySelector(".nav__wrapper");
+let navToggle = document.querySelector(".nav__toggle");
+
+navToggle.addEventListener("click", () => {
+  navWrapper.classList.toggle("visually-hidden");
+});
