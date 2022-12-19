@@ -1,10 +1,14 @@
-// .main-nav {
-//   margin-bottom: 26px;
-// }
-
 .nav {
   display: flex;
   align-items: center;
+
+  a {
+    color: $color-black;
+
+    &:hover {
+      color: $color-grey;
+    }
+  }
 }
 
 
@@ -23,6 +27,8 @@
   width: 32px;
   height: 28px;
   margin-left: 24px;
+  cursor: pointer;
+  color: $color-black;
 
   &::before {
     position: absolute;
@@ -30,7 +36,7 @@
     content: "";
     width: 28px;
     height: 2px;
-    background-color: #000000;
+    background-color: currentColor;
     top: 9px;
     right: 0;
   }
@@ -41,9 +47,13 @@
     content: "";
     width: 16px;
     height: 2px;
-    background-color: #000000;
+    background-color: currentColor;
     bottom: 9px;
     right: 0;
+  }
+
+  &:hover {
+    color: $color-grey;
   }
 }
 

@@ -47,7 +47,7 @@
   h2 {
     font-size: 14px;
     font-weight: normal;
-    width: 45vw;
+    width: 50vw;
     margin: 0;
   }
 }
@@ -66,8 +66,12 @@
 .good-btn {
   border: none;
   background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center center;
+  cursor: pointer;
+  color: $color-black;
+
+  &:hover {
+    color: $color-grey;
+  }
 }
 
 .good__del {
@@ -75,9 +79,8 @@
 }
 
 .good-btn--del {
-  background-image: url("./../../img/del.svg");
-  width: 22px;
   height: 22px;
+  width: 22px;
 }
 
 .good__parameter {
@@ -250,14 +253,6 @@
 .good-count {
   width: 32px;
   height: 32px;
-
-  &--decrease {
-    background-image: url("./../../img/count-decrease.svg");
-  }
-
-  &--increase {
-    background-image: url("./../../img/count-increase.svg");
-  }
 }
 
 .discount {
@@ -307,12 +302,10 @@
   button {
     position: absolute;
     right: 10px;
-    top: 20px;
+    top: 22px;
     display: block;
     border: none;
-    width: 20px;
-    height: 20px;
-    background-color: #9e8787; // => transparent
+    background-color: transparent;
     cursor: pointer; // => media-query
   }
 }

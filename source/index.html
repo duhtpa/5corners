@@ -19,7 +19,12 @@
             height="22"></a>
       </div>
 
-      <a class="nav__link--bag box" href="#"><span class="visually-hidden">Корзина</span></a>
+      <a class="nav__link--bag" href="#">
+        <span class="visually-hidden">Корзина</span>
+        <svg width="28" height="28">
+          <use xlink:href="./img/sprite.svg#bag"></use>
+        </svg>
+      </a>
 
       <div class="nav__wrapper visually-hidden">
         <ul class="page-nav__site site-list">
@@ -91,8 +96,12 @@
 
             <h2><a href="#">Утепленная стеганная куртка женская Top Hills</a></h2>
 
-            <button class="good__del good-btn good-btn--del" type="button"><span class="visually-hidden">Удалить
-                товар</span></button>
+            <button class="good__del good-btn good-btn--del" type="button">
+              <span class="visually-hidden">Удалитьтовар</span>
+              <svg width="22" height="22">
+                <use xlink:href="./img/sprite.svg#del"></use>
+              </svg>
+            </button>
 
             <dl class="good__parameter param">
               <div>
@@ -165,14 +174,22 @@
                   <span class="price">10 000 ₽</span>
                 </p>
                 <div class="good__count-wrapper">
-                  <button class="good-btn good-count good-count--decrease" type="button"><span
-                      class="visually-hidden">Уменьшить</span></button>
+                  <button class="good-btn good-count good-count--decrease" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                    <svg width="32" height="32"">
+                      <use xlink:href=" ./img/sprite.svg#count-decrease"></use>
+                    </svg>
+                  </button>
                   <fieldset>
                     <input type="number" name="512-05--count" min="1" maxlength="2" aria-label="Количество единиц"
                       value="2">
                   </fieldset>
-                  <button class="good-btn good-count good-count--increase" type="button"><span
-                      class="visually-hidden">Добавить</span></button>
+                  <button class="good-btn good-count good-count--increase" type="button">
+                    <span class="visually-hidden">Добавить</span>
+                    <svg width="32" height="32">
+                      <use xlink:href="./img/sprite.svg#count-increase"></use>
+                    </svg>
+                  </button>
                 </div>
                 <p class="good__price">
                   <span class="discount">
@@ -196,8 +213,12 @@
               <button type="button">Восстановить</button>
             </div>
 
-            <button class="good__del good-btn good-btn--del" type="button"><span class="visually-hidden">Удалить
-                товар</span></button>
+            <button class="good__del good-btn good-btn--del" type="button">
+              <span class="visually-hidden">Удалитьтовар</span>
+              <svg width="22" height="22">
+                <use xlink:href="./img/sprite.svg#del"></use>
+              </svg>
+            </button>
           </div>
         </li>
         <li class="basket__item">
@@ -211,8 +232,12 @@
 
             <h2><a href="#">Вязанная шапка Zolla</a></h2>
 
-            <button class="good__del good-btn good-btn--del" type="button"><span class="visually-hidden">Удалить
-                товар</span></button>
+            <button class="good__del good-btn good-btn--del" type="button">
+              <span class="visually-hidden">Удалитьтовар</span>
+              <svg width="22" height="22">
+                <use xlink:href="./img/sprite.svg#del"></use>
+              </svg>
+            </button>
 
             <dl class="good__parameter param">
               <div>
@@ -273,14 +298,22 @@
                   <span class="price">500 ₽</span>
                 </p>
                 <div class="good__count-wrapper">
-                  <button class="good-btn good-count good-count--decrease" type="button"><span
-                      class="visually-hidden">Уменьшить</span></button>
+                  <button class="good-btn good-count good-count--decrease" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                    <svg width="32" height="32">
+                      <use xlink:href="./img/sprite.svg#count-decrease"></use>
+                    </svg>
+                  </button>
                   <fieldset>
                     <input type="number" name="891-256--count" min="1" maxlength="2" aria-label="Количество единиц"
                       value="1">
                   </fieldset>
-                  <button class="good-btn good-count good-count--increase" type="button"><span
-                      class="visually-hidden">Добавить</span></button>
+                  <button class="good-btn good-count good-count--increase" type="button">
+                    <span class="visually-hidden">Добавить</span>
+                    <svg width="32" height="32">
+                      <use xlink:href="./img/sprite.svg#count-increase"></use>
+                    </svg>
+                  </button>
                 </div>
                 <p class="good__price">
                   <span class="discount"></span>
@@ -321,7 +354,12 @@
             <textarea class="text-field action-field" name="contacts-address" id="contacts-address" cols="30" rows="2"
               placeholder="Адрес доставки" autocomplete="off"
               required>г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
-            <button type="button"><span class="visually-hidden">Показать на карте</span></button>
+            <button type="button">
+              <span class="visually-hidden">Показать на карте</span>
+              <svg width="13.26" height="13.26"">
+                <use xlink:href=" ./img/sprite.svg#search"></use>
+              </svg>
+            </button>
             <label class="contacts__label" for="contacts-address">Адрес доставки</label>
           </li>
         </ul>
