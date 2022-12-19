@@ -544,6 +544,15 @@
   font-weight: bold;
   margin-bottom: 10px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-grey;
+  }
+
+  &:disabled {
+    background-color: $color-grey--light;
+    color: $color-grey;
+  }
 }
 
 .formalize__privacy {
